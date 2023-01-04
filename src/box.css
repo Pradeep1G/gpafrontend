@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.btndis {
+  /* width: 20vw; */
+  /* height: 20vh; */
+  /* display: flex; */
+  margin-bottom: 5px;
+  align-items: center;
+  /* flex-direction: column; */
+  font-family: "Nunito", sans-serif;
+  /* left: 100px; */
+  margin-right:70px;
+  /* position: absolute; */
+  
+}
+
+.btndis .openModalBtn {
+  width: 100px;
+  height: 45px;
+  margin-left: 100px;
+  border-radius: 6px;
+  margin-top: 20px;
+  background-color: #831238;
+  color: white;
+  cursor: pointer;
+}
+.button:hover{
+    background:#9e1c3f;
+}

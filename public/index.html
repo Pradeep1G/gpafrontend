@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,6 +10,9 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="shortcut icon" href="https://sathyabama.cognibot.in/theme/image.php/klass/theme/1670255127/favicon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,9 +27,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <title>SIST GPA Calculator</title>
   </head>
   <body>
+    <!-- <h1>degerg</h1>/ -->
+    <!-- <button name="btn1", id="btn1", type="button", onclick="butnclicked()">click on this</button> -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +45,79 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+
+
+
+
+
+
+    <div id="header" style="position:absolute; top:0px; left:0px; height:200px; right:0px;overflow:hidden;">
+      <nav class="navbar navbar-expand-lg navbar static-top">
+        <div class="containerx">
+          <a class="navbar-brand" href="https://sathyabama.cognibot.in/?redirect=0">
+            <img class="log1img" src="log1.png" alt="..." height="100px;">
+          </a></div>
+          <div class="cont1">
+            <a class="navbar-brand" href="https://sathyabama.cognibot.in/?redirect=0">
+              <img src="logc.png" alt="..." height="80px;" >
+            </a></div>
+
+          </div>
+
+
+      </nav>
+
+    </div>
+    <!-- style="position:absolute; top:200px; bottom:200px; left:0px; right:0px; overflow:auto;"> -->
+    <div id="content" >
+      <div class="dropdown">
+        <div class="select">
+        <span id="drpbtn" class = "selected">Select Your Semester&nbsp&nbsp</span>
+        <div class="caret">
+
+
+        </div>
+        </div>
+        <ul class="menu">
+          <a style="text-decoration: none" href="/sem1"><li id="semester1" onclick="sem1clicked()"><b>Semester-1</b></li></a>
+          <a style="text-decoration: none" href="/sem2"><li id="semester2" ><b>Semester-2</b></li></a>
+          <a style="text-decoration: none" href="/sem3"><li id="semester3" ><b>Semester-3</b></li></a>
+          <a style="text-decoration: none" href="/sem4"><li id="semester4" ><b>Semester-4</b></li></a>
+          <a style="text-decoration: none" href="/sem5"><li id="semester5" ><b>Semester-5</b></li></a>
+          <a style="text-decoration: none" href="/sem6"><li id="semester6" ><b>Semester-6</b></li></a>
+          <a style="text-decoration: none" href="/sem7"><li id="semester7" ><b>Semester-7</b></li></a>
+          <a style="text-decoration: none" href="/sem8"><li id="semester8" ><b>Semester-8</b></li></a>
+
+
+        </ul>
+
+      </div>
+      </div>
+
+    <div id="footer" style="position:absolute; margin-top:750px; height:150px; left:0px; right:0px;">
+      <footer>
+        <div class="copyrights">
+
+        <p id="copyrights" >All rights reserved &#169 2023 Copyright Sathyabama University. </p>
+
+
+      </div>
+    </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
