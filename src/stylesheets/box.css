@@ -19,10 +19,11 @@
   margin-left: 100px;
   border-radius: 6px;
   margin-top: 20px;
-  background-color: #831238;
+  background: #820000;
   color: white;
   cursor: pointer;
 }
-.button:hover{
-    background:#9e1c3f;
+
+.openModalBtn:hover{
+    background:#990000;
 }

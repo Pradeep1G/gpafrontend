@@ -5,6 +5,8 @@ import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
 import Axios from "axios";
 
+const jasondataurl = "https://gpaserverx.onrender.com/course/CSEsem"
+
 function Getdataarray(props){
 
     const code_list = [];
@@ -15,7 +17,7 @@ function Getdataarray(props){
 
     useEffect(() => {
         async function go(){
-            const response = await Axios.get("http://localhost:3005/course/CSEsem"+props.semnum)
+            const response = await Axios.get(jasondataurl+props.semnum)
             setcourse(response.data)
             console.log(response.data)
         }

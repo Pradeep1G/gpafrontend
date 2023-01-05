@@ -1,13 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
-import './box.css';
+import './stylesheets/App.css';
+import './stylesheets/box.css';
 import React, {useState, useEffect, StrictMode} from 'react';
 import Axios from "axios";
-import Display from './displaydata';
-import Getdataarray from "./getdata";
-import Todict from './todict';
+import Display from './components/displaydata';
+import Getdataarray from "./methods/getdata";
+import Todict from './methods/todict';
 import { Redirect, renderMatches } from "react-router-dom";
-import { Submitbtn } from './submitbtn';
+// import { Submitbtn } from './submitbtn';
 import Modal from "./Modal";
 
 
@@ -20,6 +20,9 @@ function App(props) {
   const [modalOpen, setModalOpen] = useState(false);
   const [cgpa , setcgpa] = useState("");
   const [marks_list_length, setmarks_list_length] = useState(null);
+  // const [erroroccur, seterroccur] = useState(false);
+
+  // const erroroccured = false;
 
 
 
@@ -31,6 +34,79 @@ function App(props) {
     const subjectpartialcredits = [];
 
 
+  // const changeHandle = (event)=>{
+
+
+
+
+  //   event.preventDefault()
+  //   // console.warn(event.target.length)
+  //   for(var i=0; i<event.target.length-3;i++){ 
+  //     // if(event.target[i].value ==''){seterroccur(true)}
+  //     marks_list.push(event.target[i].value);
+    
+  //   //  subjectpartialcredits.push((Number.parseInt((Number.parseInt(event.target[i].value)/10))+1)*(code_list[2][i]))
+  //   }
+  //   console.warn(marks_list)
+
+
+  //       if((props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!=''){
+  //     marks_list[6]=Number.parseInt(marks_list[6])*2;
+  //   }
+  //   if((props.semnum==='3' || props.semnum==='4')&&marks_list[6]!=''){
+  //     marks_list[8]=Number.parseInt(marks_list[8])*2;
+  //   }
+
+  //   for(var i=0; i<marks_list.length; i++){
+  //    subjectpartialcredits.push((Number.parseInt((Number.parseInt(marks_list[i])/10))+1)*(code_list[2][i]))
+  //   }
+    
+  //     marks_list.push(event.target[i].value);
+  //   console.warn(marks_list)
+
+  //     subjectpartialcredits.push((Number.parseInt((Number.parseInt(event.target[i].value)/10))+1)*(code_list[2][i]))
+
+    
+    
+  //   // console.warn(marks_list)
+
+
+  //   // if(props.semnum ==='1' || props.semnum==='2'){
+  //   //   subjectpartialcredits[6]=Number.parseInt(subjectpartialcredits[6])*2 -1;
+  //   // }
+  //   // if(props.semnum==='3' || props.semnum==='4'){
+  //   //   subjectpartialcredits[8]=Number.parseInt(subjectpartialcredits[8])*2 - 1;
+  //   // }
+   
+
+
+  //   // {props.semnum===1 ? marks_list[6] = marks_list[6]*2 : marks_list[6]}
+  //   // console.warn(code_list[2])
+
+  //   // console.warn(marks_list.length)
+  //   // console.warn(subjectpartialcredits)
+  //   setmarks_list_length(marks_list.length)
+  //   // console.warn(marks_list_length+"hjjy")
+
+  //   let sumofsubjectpartialcredits = subjectpartialcredits.reduce(function (a, b) {
+  //     return (a + b);
+  //   }, 0);
+  //   // console.warn(sumofsubjectpartialcredits);
+
+  //   let sumofcredits=code_list[2].reduce(function(a,b){
+  //     return Number.parseInt(a)+Number.parseInt(b);
+  //   }, 0);
+  //   // console.warn(sumofcredits)
+  //   // console.warn(Number((45.6647).toFixed(2)))
+
+  //   // console.warn(((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4))
+  //   setcgpa((Number((sumofsubjectpartialcredits/sumofcredits).toFixed(2))+" ").substring(0,4));
+  //   cgpa = ((Number((sumofsubjectpartialcredits/sumofcredits).toFixed(2))+" ").substring(0,4))
+
+  // }
+
+
+
   const changeHandle = (event)=>{
 
 
@@ -38,21 +114,48 @@ function App(props) {
 
     event.preventDefault()
     // console.warn(event.target.length)
-    for(var i=0; i<event.target.length-3;i++){ marks_list.push(event.target[i].value); subjectpartialcredits.push((Number.parseInt((Number.parseInt(event.target[i].value)/10))+1)*(code_list[2][i]))}
+    for(var i=0; i<code_list[2].length;i++){ 
+      // if(event.target[i].value ==''){seterroccur(true)}
+      marks_list.push(event.target[i].value);
     
-    
-    
-    console.warn(marks_list)
-    if(props.semnum ==='1'){
-      subjectpartialcredits[6]=Number.parseInt(subjectpartialcredits[6])*2
+    //  subjectpartialcredits.push((Number.parseInt((Number.parseInt(event.target[i].value)/10))+1)*(code_list[2][i]))
     }
+
+
+    if((props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!=''){
+      marks_list[6]=Number.parseInt(marks_list[6])*2;
+    }
+    if((props.semnum==='3' || props.semnum==='4')&&marks_list[6]!=''){
+      marks_list[8]=Number.parseInt(marks_list[8])*2;
+    }
+    // console.warn(marks_list)
+
+    for(var i=0; i<marks_list.length; i++){
+     subjectpartialcredits.push((Number.parseInt((Number.parseInt(marks_list[i])/10))+1)*(code_list[2][i]))
+    }
+    console.warn(subjectpartialcredits)
+      // marks_list.push(event.target[i].value);
+      // subjectpartialcredits.push((Number.parseInt((Number.parseInt(event.target[i].value)/10))+1)*(code_list[2][i]))
+
+    
+    
     console.warn(marks_list)
+
+
+    // if(props.semnum ==='1' || props.semnum==='2'){
+    //   subjectpartialcredits[6]=Number.parseInt(subjectpartialcredits[6])*2 -1;
+    // }
+    // if(props.semnum==='3' || props.semnum==='4'){
+    //   subjectpartialcredits[8]=Number.parseInt(subjectpartialcredits[8])*2 - 1;
+    // }
+   
+
 
     // {props.semnum===1 ? marks_list[6] = marks_list[6]*2 : marks_list[6]}
     // console.warn(code_list[2])
 
     // console.warn(marks_list.length)
-    console.warn(subjectpartialcredits)
+    // console.warn(subjectpartialcredits)
     setmarks_list_length(marks_list.length)
     // console.warn(marks_list_length+"hjjy")
 
@@ -151,20 +254,27 @@ function App(props) {
           // {console.warn(marks_list_length)}
           // {console.warn(code_list[2].length)}
 
-          // {marks_list_length==code_list[2].length ? setModalOpen(true) : setModalOpen(false)}
-          
+          // {marks_list.length==code_list[2].length ? setModalOpen(true) : <p>please fill all details</p>}
+          // {marks_list.length<code_list[2].length ? seterroccur(true) : seterroccur(false)}
+
+          // {for(let mark of marks_list){mark=='' ? seterroccur(true): console.warn("not working")}}
+
           setModalOpen(true)
           {document.getElementById("modalcontainer").style.display="flex"}
           {while(marks_list.length){marks_list.pop()}}
+          {while(subjectpartialcredits.length){subjectpartialcredits.pop()}}
+          {while(marks_list.length){marks_list.pop()}}
+
+
           // {console.warn(marks_list)}
           ;
         }}
       >
         Calculate
       </button>
-      {console.log(cgpa)}
+      {/* {console.log(cgpa)} */}
 
-      {(modalOpen && <Modal gradepoints={cgpa} semnum={props.semnum} setOpenModal={setModalOpen} />)}
+      {(modalOpen && <Modal gradepoints={cgpa<=10? cgpa: '100'} semnum={props.semnum} setOpenModal={setModalOpen} />)}
     </div>
 
 

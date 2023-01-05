@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './stylesheets/index.css';
 import App from './App';
-import App2 from './App2'; 
-import App3 from './App3';
+import App2 from './AppRoutes'; 
+// import App3 from './App3';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 

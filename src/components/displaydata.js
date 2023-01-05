@@ -29,6 +29,7 @@ function Display(props){
           // marginLeft:30,
           border: "black",
           borderWidth: 1,
+          borderRadius: 15,
           width: 400,
           borderStyle: "outset",
           padding:7 }}>
@@ -42,6 +43,7 @@ function Display(props){
           marginLeft:10,
           border: "black",
           borderWidth: 1,
+          borderRadius: 15,
           borderStyle: "outset",
           padding:7 }}>
           {props.name}</p>
@@ -55,6 +57,7 @@ function Display(props){
             border: "blue",
             borderColor:"red",
             borderWidth: 1,
+          borderRadius: 15,
             borderStyle: "outset"
           }}
           type="number"
