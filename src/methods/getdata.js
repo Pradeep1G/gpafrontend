@@ -12,13 +12,13 @@ function Getdataarray(props){
     const code_list = [];
     const name_list = [];
     const credit_list = [];
-    // const semnum = props.semnum;
+    const semnum = props.semnum;
 
     const [dataarray, setcourse] = useState([])
 
     useEffect((props) => {
         async function go(props){
-            const response = await Axios.get(jasondataurl+props.semnum)
+            const response = await Axios.get(jasondataurl+semnum)
             setcourse(response.data)
             console.log(response.data)
         }
