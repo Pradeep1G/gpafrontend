@@ -1,8 +1,8 @@
 
 
 
-import React, {useState, useEffect} from 'react';
-import ReactDOM from 'react-dom/client';
+import  {useState, useEffect} from 'react';
+// import ReactDOM from 'react-dom/client';
 import Axios from "axios";
 
 const jasondataurl = "https://gpaserverx.onrender.com/course/CSEsem"

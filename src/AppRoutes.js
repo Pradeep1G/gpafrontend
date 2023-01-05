@@ -1,44 +1,44 @@
 import { StrictMode } from 'react';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import App from './App';
-import Homepage from './home';
+// import Homepage from './home';
 
 export default function App2() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
 
-  const navigateSem1 = () => {
-    // 👇️ navigate to /
-    navigate('/sem1');
-  };
-  const navigateSem2 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem2');
-  };
-  const navigateSem3 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem3');
-  };
-  const navigateSem4 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem4');
-  };
-  const navigateSem5 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem5', {replace: true});
-  };
-  const navigateSem6 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem6');
-  };
-  const navigateSem7 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem7');
-  };
-  const navigateSem8 = () => {
-    // 👇️ navigate to /contacts
-    navigate('/sem8');
-  };
+  // const navigateSem1 = () => {
+  //   // 👇️ navigate to /
+  //   navigate('/sem1');
+  // };
+  // const navigateSem2 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem2');
+  // };
+  // const navigateSem3 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem3');
+  // };
+  // const navigateSem4 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem4');
+  // };
+  // const navigateSem5 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem5', {replace: true});
+  // };
+  // const navigateSem6 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem6');
+  // };
+  // const navigateSem7 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem7');
+  // };
+  // const navigateSem8 = () => {
+  //   // 👇️ navigate to /contacts
+  //   navigate('/sem8');
+  // };
 
   return (
     <div>

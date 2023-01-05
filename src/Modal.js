@@ -1,5 +1,5 @@
 import React from "react";
-import { redirect } from "react-router-dom";
+// import { redirect } from "react-router-dom";
 // import "./src/stylesheets/Modal.css";
 import "./stylesheets/Modal.css"
 
@@ -17,7 +17,7 @@ function Modal(props, { setOpenModal }) {
             <button href="/"
               onClick={() => {
   
-                {document.getElementById("modalcontainer").style.display="none"}
+                  document.getElementById("modalcontainer").style.display="none"
   
   
                 setOpenModal(false);
@@ -32,7 +32,7 @@ function Modal(props, { setOpenModal }) {
           <div className="footer">
             <a href="/"><button 
               onClick={() => {
-                {document.getElementById("modalcontainer").style.display="none"}
+                document.getElementById("modalcontainer").style.display="none"
                 setOpenModal(false);
               }}
               id="cancelBtn"
@@ -60,7 +60,7 @@ function Modal(props, { setOpenModal }) {
           <button href="/"
             onClick={() => {
 
-              {document.getElementById("modalcontainer").style.display="none"}
+              document.getElementById("modalcontainer").style.display="none"
 
 
               setOpenModal(false);
@@ -75,7 +75,7 @@ function Modal(props, { setOpenModal }) {
         <div className="footer">
           <a href="/"><button 
             onClick={() => {
-              {document.getElementById("modalcontainer").style.display="none"}
+              document.getElementById("modalcontainer").style.display="none"
               setOpenModal(false);
             }}
             id="cancelBtn"

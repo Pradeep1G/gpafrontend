@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './stylesheets/App.css';
 import './stylesheets/box.css';
-import React, {useState, useEffect, StrictMode} from 'react';
-import Axios from "axios";
+import React, {useState} from 'react';
+// import Axios from "axios";
 import Display from './components/displaydata';
 import Getdataarray from "./methods/getdata";
 import Todict from './methods/todict';
-import { Redirect, renderMatches } from "react-router-dom";
+// import { Redirect, renderMatches } from "react-router-dom";
 // import { Submitbtn } from './submitbtn';
 import Modal from "./Modal";
 
@@ -122,16 +122,16 @@ function App(props) {
     }
 
 
-    if((props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!=''){
+    if((props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!==''){
       marks_list[6]=Number.parseInt(marks_list[6])*2;
     }
-    if((props.semnum==='3' || props.semnum==='4')&&marks_list[6]!=''){
+    if((props.semnum==='3' || props.semnum==='4')&&marks_list[6]!==''){
       marks_list[8]=Number.parseInt(marks_list[8])*2;
     }
     // console.warn(marks_list)
 
-    for(var i=0; i<marks_list.length; i++){
-     subjectpartialcredits.push((Number.parseInt((Number.parseInt(marks_list[i])/10))+1)*(code_list[2][i]))
+    for(var j=0; j<marks_list.length; i++){
+     subjectpartialcredits.push((Number.parseInt((Number.parseInt(marks_list[j])/10))+1)*(code_list[2][j]))
     }
     console.warn(subjectpartialcredits)
       // marks_list.push(event.target[i].value);
@@ -157,7 +157,7 @@ function App(props) {
     // console.warn(marks_list.length)
     // console.warn(subjectpartialcredits)
     setmarks_list_length(marks_list.length)
-    // console.warn(marks_list_length+"hjjy")
+    console.warn(marks_list_length+"hjjy")
 
     let sumofsubjectpartialcredits = subjectpartialcredits.reduce(function (a, b) {
       return (a + b);
@@ -171,7 +171,7 @@ function App(props) {
 
     console.warn(((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4))
     setcgpa(((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4));
-    cgpa = ((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4)
+    // cgpa = ((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4)
 
   }
 
@@ -230,7 +230,7 @@ function App(props) {
 {document.getElementById("content").style.display="none"}
 {document.getElementById("footer").style.height="100px"}
 {/* {document.getElementById("footer").style.marginTop="870px"} */}
-{props.semnum==4 || props.semnum==10 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
+{props.semnum===4 || props.semnum===10 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
 
 {/* {document.getElementById("copyrights").style.paddingTop="40px"} */}
 
@@ -260,14 +260,14 @@ function App(props) {
           // {for(let mark of marks_list){mark=='' ? seterroccur(true): console.warn("not working")}}
 
           setModalOpen(true)
-          {document.getElementById("modalcontainer").style.display="flex"}
-          {while(marks_list.length){marks_list.pop()}}
-          {while(subjectpartialcredits.length){subjectpartialcredits.pop()}}
-          {while(marks_list.length){marks_list.pop()}}
+          document.getElementById("modalcontainer").style.display="flex"
+          while(marks_list.length){marks_list.pop()}
+          while(subjectpartialcredits.length){subjectpartialcredits.pop()}
+          while(marks_list.length){marks_list.pop()}
 
 
           // {console.warn(marks_list)}
-          ;
+          
         }}
       >
         Calculate
