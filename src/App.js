@@ -130,7 +130,7 @@ function App(props) {
     }
     // console.warn(marks_list)
 
-    for(var j=0; j<marks_list.length; J++){
+    for(var j=0; j<marks_list.length; j++){
      subjectpartialcredits.push((Number.parseInt((Number.parseInt(marks_list[j])/10))+1)*(code_list[2][j]))
     }
     console.warn(subjectpartialcredits)
