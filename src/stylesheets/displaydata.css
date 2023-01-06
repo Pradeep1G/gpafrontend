@@ -6,7 +6,7 @@
     text-align: left;
     color: black;
     margin-right: 10;
-    border-color: "black";
+    border-color: black;
     border-width: 1;
     border-radius: 15px;
     width: 400px;
@@ -20,7 +20,7 @@
 .subjectname{
     align-items: center;
     text-align: center;
-    color:"black";
+    color:black;
     width:110px;
     margin-right:10px;
     margin-left:10px;
