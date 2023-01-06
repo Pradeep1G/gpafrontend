@@ -22,7 +22,6 @@ const jasondataurl = "https://gpaserverx.onrender.com/course/CSEsem"
             const response = await Axios.get(jasondataurl+semnum)
             setcourse(response.data)
             console.log(response.data)
-            console.warn(props.semnum)
         }
         go()
     }, [semnum])
