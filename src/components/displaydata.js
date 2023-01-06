@@ -1,4 +1,5 @@
 import React from "react";
+import '../stylesheets/displaydata.css'
 // import ReactDOM from 'react-dom/client';
 
 function Display(props){
@@ -21,45 +22,13 @@ function Display(props){
 }}>
       <div style={{ display: "flex"}}>
         
-        <p className="name"
-        style={{ 
-            textAlign:"left",
-          color:"black",
-          marginRight:10,
-          // marginLeft:30,
-          border: "black",
-          borderWidth: 1,
-          borderRadius: 15,
-          width: 400,
-          borderStyle: "outset",
-          padding:7 }}>
-          {props.code}
+        <p className="subjectcode">
+          &nbsp;{props.code}
         </p>
-        <p className="name"
-        style={{ 
-            color:"black",
-            width:110,
-          marginRight:10,
-          marginLeft:10,
-          border: "black",
-          borderWidth: 1,
-          borderRadius: 15,
-          borderStyle: "outset",
-          padding:7 }}>
+        <p className="subjectname">
           {props.name}</p>
         <input
-          style={{
-            marginLeft:10,
-            // marginTop:15,
-            width: 90,
-            height:43,
-            // backgroundColor:"blue",
-            border: "blue",
-            borderColor:"red",
-            borderWidth: 1,
-          borderRadius: 15,
-            borderStyle: "outset"
-          }}
+          className="inputmarks"
           type="number"
           name="FirstName"
           // required
