@@ -5,25 +5,26 @@ import  {useState, useEffect} from 'react';
 // import ReactDOM from 'react-dom/client';
 import Axios from "axios";
 
-const jasondataurl = "https://gpaserverx.onrender.com/course/CSEsem"
 
 function Getdataarray(props){
 
     const code_list = [];
     const name_list = [];
     const credit_list = [];
+const jasondataurl = "https://gpaserverx.onrender.com/course/CSEsem"
+    
     const semnum = props.semnum;
 
     const [dataarray, setcourse] = useState([])
 
     useEffect(() => {
-        async function go(props){
+        async function go(){
             const response = await Axios.get(jasondataurl+semnum)
             setcourse(response.data)
             console.log(response.data)
             console.warn(props.semnum)
         }
-        go(props)
+        go()
     }, [semnum])
     console.log(dataarray)
     // console.log(go())
