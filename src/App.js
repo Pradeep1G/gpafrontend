@@ -230,7 +230,7 @@ function App(props) {
 {document.getElementById("content").style.display="none"}
 {document.getElementById("footer").style.height="100px"}
 {/* {document.getElementById("footer").style.marginTop="870px"} */}
-{props.semnum===4 || props.semnum===10 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
+{props.semnum==='4' || props.semnum===10 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
 
 {/* {document.getElementById("copyrights").style.paddingTop="40px"} */}
 
