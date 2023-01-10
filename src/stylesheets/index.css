@@ -77,6 +77,9 @@ code {
     max-height: 80px;
     /* max-width: 100px; */
   }
+  #footer{
+    margin-top: 820px;
+  }
 }
 
 .log1img{
