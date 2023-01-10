@@ -3,12 +3,18 @@ import './stylesheets/App.css';
 import './stylesheets/box.css';
 import React, {useState} from 'react';
 // import Axios from "axios";
-import Display from './components/displaydata';
+import Display from './displaydata';
 import Getdataarray from "./methods/getdata";
 import Todict from './methods/todict';
 // import { Redirect, renderMatches } from "react-router-dom";
 // import { Submitbtn } from './submitbtn';
 import Modal from "./Modal";
+import "./stylesheets/index.css";
+// import nav from 'react-bootstrap/Nav';
+import { Displayheader } from './displayheader';
+import log from "./log1.png";
+import log2 from "./logc.png";
+
 
 
 
@@ -130,7 +136,7 @@ function App(props) {
     }
     // console.warn(marks_list)
 
-    for(var j=0; j<marks_list.length; i++){
+    for(var j=0; j<marks_list.length; j++){
      subjectpartialcredits.push((Number.parseInt((Number.parseInt(marks_list[j])/10))+1)*(code_list[2][j]))
     }
     console.warn(subjectpartialcredits)
@@ -227,15 +233,36 @@ function App(props) {
 
   return (
     <React.StrictMode>
-{document.getElementById("content").style.display="none"}
+{/* {document.getElementById("content").style.display="none"} */}
 {document.getElementById("footer").style.height="100px"}
 {/* {document.getElementById("footer").style.marginTop="870px"} */}
-{props.semnum===4 || props.semnum===10 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
+{props.semnum==='4' || props.semnum===5 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
 
 {/* {document.getElementById("copyrights").style.paddingTop="40px"} */}
 
     {/* {document.getElementById("drpbtn").setAttribute("setText", "semname")} */}
-    <div className="App">
+
+
+
+{/* {document.getElementById("header").style.display="none"} */}
+
+
+
+
+
+
+
+<Displayheader img1={log} img2={log2} />
+
+
+
+
+<div className="App">
+
+
+
+
+
     {/* {document.getElementById("footer").setAttribute("height", "120")} */}
     <h2 style={{paddingTop:150}}> SEMESTER-{props.semnum} </h2>
     <form onSubmit={changeHandle}>
@@ -243,6 +270,7 @@ function App(props) {
       {code_dict.map((item)=>{
         return <Display name={item.Course_Name} code = {item.Course_Code} credit={item.Course_Credit}/>
       })}
+      {console.warn("i am running")}
 
 
 

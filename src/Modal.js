@@ -70,7 +70,7 @@ function Modal(props, { setOpenModal }) {
           </button>
         </div>
         <div className="body">
-          Your {" "} <b> &nbsp;Grade Point Average&nbsp; </b>  of Semester {props.semnum} is <b>&nbsp;{props.gradepoints}</b>
+          <p>Your {" "} <b> &nbsp;Grade Point Average&nbsp; </b>  of Semester {props.semnum} is <b>&nbsp;{props.gradepoints}</b></p>
         </div>
         <div className="footer">
           <a href="/"><button 
