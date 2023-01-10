@@ -52,6 +52,7 @@ code {
 
 .cont1{
   padding-left: 600px;
+  padding-right: 0%;
 } 
 @media screen and (max-width:1000px){
   .cont1{
@@ -94,7 +95,7 @@ body{
 }
 img{
   padding-bottom: 1opx;
-  padding-right: 150px;
+  /* padding-right: 150px; */
 }
 .log1img{
 /* padding-right: 400px; */
