@@ -6,7 +6,7 @@ import { Displayheader } from "./displayheader";
 export default function Selectdpt(){
     // document.getElementById("content").style.display="none";
     
-    document.getElementById("footer").style.marginTop="700px";
+    // document.getElementById("footer").style.marginTop="820px";
 
     return(
         <>
