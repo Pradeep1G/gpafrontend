@@ -51,7 +51,7 @@ code {
 
 
 .cont1{
-  padding-left: 300px;
+  padding-left: 600px;
 } 
 @media screen and (max-width:1000px){
   .cont1{
@@ -97,7 +97,7 @@ img{
   padding-right: 150px;
 }
 .log1img{
-padding-right: 400px;
+/* padding-right: 400px; */
 }
 .containerx{
   padding-top: 20px;
