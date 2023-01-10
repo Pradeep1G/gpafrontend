@@ -5,6 +5,8 @@ import { Displayheader } from "./displayheader";
 
 export default function SelectSem(props){
     // document.getElementById("content").style.display="none";
+
+    document.getElementById("footer").style.marginTop="700px";
     
 
 // const dptname=props.dpt;
