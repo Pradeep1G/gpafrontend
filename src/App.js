@@ -128,11 +128,21 @@ function App(props) {
     }
 
 
-    if((props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!==''){
+    if(props.dpt==="CSE"&&(props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!==''){
       marks_list[6]=Number.parseInt(marks_list[6])*2;
     }
-    if((props.semnum==='3' || props.semnum==='4')&&marks_list[6]!==''){
+    if(props.dpt==="CSE"&&(props.semnum==='3' || props.semnum==='4')&&marks_list[6]!==''){
       marks_list[8]=Number.parseInt(marks_list[8])*2;
+    }
+
+
+    if(props.dpt==="ECE"&&(props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!==''){
+      marks_list[6]=Number.parseInt(marks_list[6])*2;
+    }
+
+
+    if(props.dpt==="MEC"&&(props.semnum ==='1' || props.semnum==='2')&&marks_list[6]!==''){
+      marks_list[6]=Number.parseInt(marks_list[6])*2;
     }
     // console.warn(marks_list)
 
@@ -175,8 +185,9 @@ function App(props) {
     }, 0);
     console.warn(sumofcredits)
 
-    console.warn(((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4))
-    setcgpa(((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4));
+    console.warn(((sumofsubjectpartialcredits/sumofcredits)+"0").substring(0,6))
+    console.warn((Number((sumofsubjectpartialcredits/sumofcredits).toFixed(2))+"0").substring(0,4));
+    setcgpa((Number((sumofsubjectpartialcredits/sumofcredits).toFixed(2))+"0").substring(0,4));
     // cgpa = ((sumofsubjectpartialcredits/sumofcredits)+" ").substring(0,4)
 
   }
