@@ -28,10 +28,11 @@
     border: thin black;
     border-width: 1;
     border-radius: 15px;
-    border-style: solid;
     /* padding: 7px; */
     height: 40px;
     line-height: 40px;
+    border-style: solid;
+
 }
 
 .inputmarks{
