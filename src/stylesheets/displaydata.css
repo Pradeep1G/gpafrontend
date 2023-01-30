@@ -11,8 +11,8 @@
     border-radius: 15px;
     width: 400px;
     height: 40px;
-    line-height: 40px;
     border: thin black;
+    line-height: 40px;
     border-style: solid;
     /* padding: 7; */
 }
@@ -25,13 +25,13 @@
     margin-right:10px;
     margin-left:10px;
     border-color: black;
-    border: thin black;
     border-width: 1;
+    border: thin black;
+    border-style: solid;
     border-radius: 15px;
     /* padding: 7px; */
     height: 40px;
     line-height: 40px;
-    border-style: solid;
 
 }
 
