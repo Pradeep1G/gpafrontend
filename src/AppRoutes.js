@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 import App from './App';
 import SelectSem from './selectsem';
 import Selectdpt from './selectdpt';
+import CGPA from './CGPA';
 // import Homepage from './home';
 
 export default function App2() {
@@ -93,6 +94,13 @@ export default function App2() {
           <Route path="/CSEAI/sem1" element={<App dpt="CSEAI" semnum="1" />} />
           <Route path="/CSEIOT/sem1" element={<App dpt="CSEIOT" semnum="1" />} />
           <Route path="/CSEDS/sem1" element={<App dpt="CSEDS" semnum="1" />} />
+          
+
+      {/* change for adding cgpa */}
+          
+          <Route path="/CSE/cgpa" element={<CGPA dpt="CSE" semnum="9" />} />
+      
+      {/* change for adding cgpa */}
 
         
           <Route path="/CSE/sem2" element={<StrictMode><App dpt="CSE" semnum="2"/></StrictMode>} />

@@ -78,12 +78,14 @@ code {
     /* max-width: 100px; */
   }
   #footer{
-    margin-top: 880px;
+    /* margin-top: 880px; */
+    position: absolute;
+    bottom: 0px;
   }
 }
 
 .log1img{
-  height: 100px;
+  height: 80px;
   width: auto;
 }
 

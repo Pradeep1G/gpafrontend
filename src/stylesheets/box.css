@@ -2,21 +2,21 @@
 .btndis {
   /* width: 20vw; */
   /* height: 20vh; */
-  /* display: flex; */
+  display: flex;
   margin-bottom: 5px;
   align-items: center;
-  /* flex-direction: column; */
+  flex-direction: column;
   font-family: "Nunito", sans-serif;
   /* left: 100px; */
-  margin-right:70px;
+  /* margin-right:70px; */
   /* position: absolute; */
   
 }
 
 .btndis .openModalBtn {
-  width: 100px;
+  width: auto;
   height: 45px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   border-radius: 6px;
   margin-top: 20px;
   background: #820000;
@@ -24,6 +24,28 @@
   cursor: pointer;
 }
 
+
+.btndis .openModalBtnforcgpa {
+  width: auto;
+  height: 45px;
+  /* margin-left: 200px; */
+  /* align-items: center; */
+  border-radius: 6px;
+  margin-top: 20px;
+  background: #820000;
+  color: white;
+  cursor: pointer;
+}
+
+
+
 .openModalBtn:hover{
     background:#990000;
+}
+
+
+#creditnote{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

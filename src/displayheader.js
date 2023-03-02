@@ -33,7 +33,7 @@ export function Displayheader(props){
         className="navbar-brand"
         href="https://sathyabama.cognibot.in/?redirect=0"
       >
-        <img  src={props.img2} alt="..." height="80px;" width="400px;" />
+        <img  src={props.img2} alt="..." height="70px;" width="300px;" />
       </a>
     </div>
   </nav>

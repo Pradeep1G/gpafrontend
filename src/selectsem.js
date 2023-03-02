@@ -36,6 +36,15 @@ export default function SelectSem(props){
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem6"}>Semester-6</Dropdown.Item>
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem7"}>Semester-7</Dropdown.Item>
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem8"}>Semester-8</Dropdown.Item>
+        
+      {/* change for adding cgpa */}
+        
+      <Dropdown.Item href={props.dpt+"/cgpa"}>CGPA</Dropdown.Item>
+
+      {/* change for adding cgpa */}
+
+
+        
         </div>
 
       </Dropdown.Menu>

@@ -246,8 +246,12 @@ function App(props) {
     <React.StrictMode>
 {/* {document.getElementById("content").style.display="none"} */}
 {document.getElementById("footer").style.height="100px"}
+{document.getElementById("footer").style.bottom="auto"}
+
 {/* {document.getElementById("footer").style.marginTop="870px"} */}
-{props.semnum==='4' || props.semnum===5 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
+{/* {props.semnum==='4' || props.semnum===5 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"} */}
+{console.warn(code_dict.length+"gckjd,hfb,vsge fale fsegf v")}
+{code_dict.length>=9 ? document.getElementById("footer").style.marginTop="880px": document.getElementById("footer").style.marginTop="820px"}
 
 {/* {document.getElementById("copyrights").style.paddingTop="40px"} */}
 
@@ -309,7 +313,7 @@ function App(props) {
           
         }}
       >
-        Calculate
+        Calculate SGPA
       </button>
       {/* {console.log(cgpa)} */}
 
