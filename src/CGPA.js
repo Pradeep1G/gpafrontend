@@ -136,7 +136,7 @@ export default function CGPA(props){
         <Displayheader img1={log} img2={log2} />
         {/* {document.getElementById("footer").style.position="auto"} */}
         {document.getElementById("footer").style.bottom="auto"}
-        {document.getElementById("footer").style.marginTop="770px"}
+        {document.getElementById("footer").style.marginTop="820px"}
 
 
 {document.getElementById("footer").style.height="100px"}
