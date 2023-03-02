@@ -31,7 +31,7 @@ export default function SelectSem(props){
 
 {/* change for adding cgpa */}
         
-<Dropdown.Item className="drpdnitem" href={props.dpt+"/cgpa"}>CGPA</Dropdown.Item>
+<Dropdown.Item className="drpdnitem" href={props.dpt+"/cgpa"}>Calculate&nbsp;&nbsp;CGPA</Dropdown.Item>
 
 {/* change for adding cgpa */}
 
