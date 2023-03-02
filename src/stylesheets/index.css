@@ -71,18 +71,27 @@ code {
 
   .log1img{
     padding-right: 0%;
-    padding-left: 1%;
+    padding-left: 10%;
     /* height: 20%;
     width: 20%; */
     max-height: 80px;
-    /* max-width: 100px; */
+    max-width: 300px;
+  }
+  .navbar{
+    justify-content: space-around;
   }
   #footer{
     /* margin-top: 880px; */
     position: absolute;
-    bottom: auto;
+    bottom: 0px;
   }
 }
+
+/* @media screen and (max-width:400px) {
+.log1img{
+  padding-left: ;
+}
+} */
 
 .log1img{
   height: 80px;

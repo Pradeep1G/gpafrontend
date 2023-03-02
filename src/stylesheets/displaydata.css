@@ -72,3 +72,29 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .subjectcode{
+        text-align: center;
+    align-items: center;
+
+        font-size: small;
+        width: 200px;
+    justify-content: center;
+    line-height: normal;
+    padding-top: 10px;
+    padding-left: 3px;
+
+        /* width: max-content; */
+    }
+    .subjectname{
+        display: none;
+        font-size: small;
+        width: 80px;
+        /* width: max-content; */
+    }
+    .inputmarks{
+        font-size: small;
+        /* width: max-content; */
+    }
+}
+
