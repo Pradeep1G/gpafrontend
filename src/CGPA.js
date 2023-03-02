@@ -134,9 +134,9 @@ export default function CGPA(props){
         <>
     <React.StrictMode>
         <Displayheader img1={log} img2={log2} />
-        {document.getElementById("footer").style.position="auto"}
-        {/* {document.getElementById("footer").style.bottom="0px"} */}
-        {document.getElementById("footer").style.marginTop="880px"}
+        {/* {document.getElementById("footer").style.position="auto"} */}
+        {document.getElementById("footer").style.bottom="auto"}
+        {document.getElementById("footer").style.marginTop="840px"}
 
 
 {document.getElementById("footer").style.height="100px"}
