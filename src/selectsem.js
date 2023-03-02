@@ -28,6 +28,14 @@ export default function SelectSem(props){
       <Dropdown.Menu>
       <div style={{height:"150px", overflow:"auto"}}>
 
+
+{/* change for adding cgpa */}
+        
+<Dropdown.Item className="drpdnitem" href={props.dpt+"/cgpa"}>CGPA</Dropdown.Item>
+
+{/* change for adding cgpa */}
+
+
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem1"}>Semester-1</Dropdown.Item>
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem2"}>Semester-2</Dropdown.Item>
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem3"}>Semester-3</Dropdown.Item>
@@ -37,11 +45,7 @@ export default function SelectSem(props){
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem7"}>Semester-7</Dropdown.Item>
         <Dropdown.Item className="drpdnitem" href={props.dpt+"/sem8"}>Semester-8</Dropdown.Item>
         
-      {/* change for adding cgpa */}
-        
-      <Dropdown.Item href={props.dpt+"/cgpa"}>CGPA</Dropdown.Item>
-
-      {/* change for adding cgpa */}
+      
 
 
         
